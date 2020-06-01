@@ -1,0 +1,61 @@
+{
+  "name": "typescript-generics-exmaples",
+  "version": "0.0.1",
+  "author": "James Carr <james@jamescarr.dev>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "lint": "xo --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "typecheck": "tsc -p ./tsconfig.json"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts?(x)}": [
+      "yarn lint"
+    ]
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "printWidth": 80,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "xo": {
+    "space": true,
+    "prettier": true,
+    "env": [
+      "es6",
+      "jest",
+      "node"
+    ],
+    "rules": {
+      "@typescript-eslint/prefer-readonly-parameter-types": 0,
+      "@typescript-eslint/ban-types": 0
+    }
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^3.0.2",
+    "@typescript-eslint/parser": "^3.0.2",
+    "eslint-config-xo-typescript": "^0.29.0",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.0.4",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.3",
+    "xo": "^0.30.0"
+  }
+}
