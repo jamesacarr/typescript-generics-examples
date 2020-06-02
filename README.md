@@ -1,5 +1,7 @@
 # TypeScript Generics Exmaples
 
+[![Test status](https://github.com/jamesacarr/typescript-generics-examples/workflows/tests/badge.svg)](https://github.com/jamesacarr/typescript-generics-examples/actions?query=workflow%3Atests)
+
 ## Description
 
 This repo contains 3 examples of using TypeScript generics for better typing.
