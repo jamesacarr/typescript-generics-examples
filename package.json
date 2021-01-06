@@ -46,7 +46,7 @@
     }
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "@jamesacarr/eslint-formatter-github-actions": "^0.0.1",
