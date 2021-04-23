@@ -2,11 +2,13 @@ import get from './get';
 
 describe('get', () => {
   it('returns undefined when passed an undefined object', () => {
+    // eslint-disable-next-line @typescript-eslint/no-confusing-void-expression
     const value = get(undefined, 'key');
     expect(value).toBe(undefined);
   });
 
   it('returns undefined when passed a null object', () => {
+    // eslint-disable-next-line @typescript-eslint/no-confusing-void-expression
     const value = get(null, 'key');
     expect(value).toBe(undefined);
   });
